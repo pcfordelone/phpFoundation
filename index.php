@@ -4,19 +4,24 @@
 <?php
 
 $dados_url  = parse_url("http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
-$rota = explode('/',$dados_url['path'],2);// essa variável virou um array pelo que pude perceber, correto? Queria colocar os dados contidos em $rota[1] na função abaixo rotas().
+$rota = explode('/',$dados_url['path'],2);
 
-$rotas = function($rota) use($rota) {
-    $rotasValidas = ['','home','empresa','produtos','servicos','contato'];
-    if (in_array($rota,$rotasValidas)) {
-        require_once($rota.".php");
-    } elseif (in_array($rota,'')) {
-        require_once("404.php");
-    } else {
+function rotas($param) {
+
+    $rotasValidas = ['home','empresa','produtos','servicos','contato','404'];
+
+    if (in_array( $param[1] ,$rotasValidas)) {
+        require_once($param[1].".php");
+    }
+    elseif ($param[1] == "") {
         require_once("home.php");
     }
+    else {
+        require_once("404.php");
+    }
+    //echo $param[1];
 };
-
+rotas($rota);
 
 ?>
 

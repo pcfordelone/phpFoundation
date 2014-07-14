@@ -9,14 +9,14 @@
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.php">Home</a></li>
-                        <li><a href="index.php?page=empresa">Empresa</a></li>
-                        <li><a href="index.php?page=produtos">Produtos</a></li>
-                        <li><a href="index.php?page=servicos">Serviços</a></li>
+                        <li class="active"><a href="home">Home</a></li>
+                        <li><a href="empresa">Empresa</a></li>
+                        <li><a href="produtos">Produtos</a></li>
+                        <li><a href="servicos">Serviços</a></li>
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="index.php?page=contato">Fale Conosco</a></li>
+                        <li><a href="contato">Fale Conosco</a></li>
                     </ul>
                 </div>
 
