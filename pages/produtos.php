@@ -1,5 +1,3 @@
-<?php require_once "topo.php" ?>
-
     <div class="row clearfix">
         <div class="col-md-8 column">
             <h2>
@@ -12,9 +10,6 @@
             </p>
         </div>
         <div class="col-md-4 column">
-            <img alt="140x140" src="img/img-produtos.jpg" class="img-rounded" />
+            <img alt="140x140" src="../img/img-produtos.jpg" class="img-rounded" />
         </div>
     </div>
-
-<?php require_once "boxs.php" ?>
-<?php require_once "footer.php" ?>
